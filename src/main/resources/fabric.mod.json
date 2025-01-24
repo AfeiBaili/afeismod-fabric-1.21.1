@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "afeismod",
+	"version": "${version}",
+	"name": "AfeisMod",
+	"description": "这是我的mod",
+	"authors": [
+		"Afei"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/afeismod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"online.afeibaili.afeismod.AfeisMod"
+		],
+		"fabric-datagen": [
+			"online.afeibaili.afeismod.AfeisModDataGenerator"
+		],
+		"client": [
+			"online.afeibaili.afeismod.AfeisClient"
+		]
+	},
+	"mixins": [
+		"afeismod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
